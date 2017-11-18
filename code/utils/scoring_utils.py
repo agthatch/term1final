@@ -155,6 +155,9 @@ def score_run_iou(gt_dir, pred_dir):
     print('average intersection over union for other people is {}'.format(people))
     print('average intersection over union for the hero is {}'.format(hero))
     print('number true positives: {}, number false positives: {}, number false negatives: {}'.format(n_true_pos, n_false_pos, n_false_neg))
+    
+    print('{}\t{}\t{}'.format(background,people,hero))
+    
     return n_true_pos, n_false_pos, n_false_neg, hero
 
 
